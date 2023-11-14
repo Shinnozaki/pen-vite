@@ -19,7 +19,23 @@ function Hall() {
     };
     return (
         <>
-            <div className="w-screen bg-[#474284]">
+        <div className="absolute w-screen h-screen z-50 bg-[url('/meningsoy.jpeg')] flex flex-col justify-center items-center xs:flex lg:hidden">
+                <div className="text-center flex flex-col justify-center gap-5 bg-blue-100/50 w-screen h-screen p-5 rounded-lg">
+                    <div className="py-8 flex flex-col gap-5 bg-white rounded-xl shadow-lg">
+                        <h1 className="text-3xl font-bold">{`Please use laptop :>`}</h1>
+                        <h1 className="text-xl">{`Saia mager bikin responsive nya ehek`}</h1>
+                    </div>
+                </div>
+            </div>
+            <div className="absolute w-screen h-screen z-50 bg-[url('/meningsoy.jpeg')] hidden flex-col justify-center items-center md:flex lg:hidden">
+                <div className="text-center flex flex-col justify-center gap-5 bg-blue-100/50 w-screen h-screen p-5 rounded-lg">
+                    <div className="py-8 flex flex-col gap-5 bg-white rounded-xl shadow-lg">
+                        <h1 className="text-3xl font-bold">{`Mweeeeeeeee jangan dikecilin`}</h1>
+                        <h1 className="text-xl">{`Saia mager bikin responsive nya ehek`}</h1>
+                    </div>
+                </div>
+            </div>
+            <div className="w-screen bg-[#474284] hidden lg:block">
                 <Navbar />
                 <div className="w-screen mt-10 flex flex-col items-center">
                     <div className="flex flex-col gap-5 text-center mb-10">
