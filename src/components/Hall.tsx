@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import hallJSON from "../data/hall.json";
 import { useState } from "react";

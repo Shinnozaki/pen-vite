@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import GiftCard from "./GiftCard";
 
@@ -9,9 +9,9 @@ interface Card {
 
 const Gift = () => {
   const [counts, setCounts] = useState<{ [key: number]: number }>({});
-  const [value, setValue] = useState<React.ReactNode | null>(null);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [selectedCards, setSelectedCards] = useState<Card[]>([]);
-  
+
 
   // useEffect(() => {
   //   if (counts === 1) {
@@ -29,7 +29,6 @@ const Gift = () => {
       const newContent = data.find((card) => card.id === id)?.result || null
       setSelectedCards([...selectedCards, { id, result: newContent }]);
       setCounts((prevCounts) => ({ ...prevCounts, [id]: (prevCounts[id] || 0) + 1 }));
-      setValue(newContent)
     }
   };
 
