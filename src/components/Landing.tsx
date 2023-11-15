@@ -24,7 +24,7 @@ function Landing() {
                 <Marquee className="absolute">
                     <img src="/balloon.png" alt="" className="h-screen w-screen" />
                 </Marquee>
-                <div className="flex justify-center items-center relative overflow-hidden w-[50%] h-[80%]">
+                <div className="flex justify-center items-center absolute overflow-hidden w-[50%] h-[80%]">
                     <img src='/hat.png' className='w-[150px] h-[150px] rounded-full absolute top-0 mt-5 z-30 rotate-45 flipped' />
                     <div className='w-[70%] bg-white/80 p-10 rounded-lg flex flex-col items-center justify-between gap-7 z-20 shadow-lg shadow-white    z'>
                         <img src='/landingPic.jpeg' className='w-[150px] h-[150px] rounded-full' />
